@@ -1,0 +1,14 @@
+<!-- task.component.html -->
+
+<div class="task-container">
+
+  <label>Title:</label>
+  <input [(ngModel)]="newTaskTitle" placeholder="Task Title" required /><br><br>
+  <label>Task Discription:</label>
+  <input [(ngModel)]="newTaskDescription" placeholder="Task Description" required /><br><br>
+  <label>Required time:</label>
+  <input [(ngModel)]="newTaskTime" placeholder="Task Time" type="time" required /><br><br>
+
+
+  <app-shared [title]="title" (click)="addTask()"></app-shared>
+</div>
